@@ -67,7 +67,7 @@ class RootViewController: UIViewController {
         [nc1, nc2, nc3].forEach({ controller in
             controller.addSideMenuButton()
         })
-        
+        sideMenuViewController.modalPresentationStyle = .fullScreen
         show(sideMenuViewController, sender: nil)
     }
 }
